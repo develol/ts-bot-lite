@@ -48,28 +48,27 @@ let requesterViber = new botLite.RequestViber({
 ### Create keyboard
 ```typescript
 let keyboards = new botLite.Keyboard({
-    keyboard: [[
-            'btn 1.1', 
-            'btn 1.2'
-        ], [
-            'btn 2.1', 
-            'btn 2.2'
-        ]
-    ]
+  keyboard: [[
+    'btn 1.1', 
+    'btn 1.2'
+  ], [
+    'btn 2.1', 
+    'btn 2.2'
+  ]]
 });
 ```
 ### Text message formatting
 ```typescript
 // Formatting HTML text
 let textHTML = new botLite.Texter({
-    markup: 'html',
-    text: '<b>bold</b><br><i>italic</i><br><br><code>code</code><s>strike</s>'
+  markup: 'html',
+  text:   '<b>bold</b><br><i>italic</i><br><br><code>code</code><s>strike</s>'
 });
 
 // Formatting Markdown text
 let textMarkdown = new botLite.Texter({
-    markup: 'markdown',
-    text: '*bold*\r\n_italic_\r\n`code`\r\n```code```\r\n~strike~'
+  markup: 'markdown',
+  text:   '*bold*\r\n_italic_\r\n`code`\r\n```code```\r\n~strike~'
 });
 
 // Custom text
@@ -151,7 +150,7 @@ requesterViber.sendPhoto({
   mask: 'send',
   date: <date_and_time>, // Unix-time format
   statusText: { 
-    ok: true, 
+    ok:        true, 
     messageId: <message_id>
   }
 }
@@ -200,7 +199,7 @@ requesterViber.sendFile({
 ```typescript
 // Send a location (Telegram) and console.log(<response>)
 requesterTelegram.sendLocation({
-  user:     '<user_id>', 
+  user:      '<user_id>', 
   keyboard:  keyboards.telegram(), 
   latitude:  '<latitude>', 
   longitude: '<longitude>'
@@ -209,7 +208,7 @@ requesterTelegram.sendLocation({
 ```typescript
 // Send a location (VK) and console.log(<response>)
 requesterVK.sendLocation({
-  user:     '<user_id>', 
+  user:      '<user_id>', 
   keyboard:  keyboards.vk(), 
   latitude:  '<latitude>', 
   longitude: '<longitude>'
@@ -218,7 +217,7 @@ requesterVK.sendLocation({
 ```typescript
 // Send a location (Viber) and console.log(<response>)
 requesterViber.sendLocation({
-  user:     '<user_id>', 
+  user:      '<user_id>', 
   keyboard:  keyboards.viber(), 
   latitude:  '<latitude>', 
   longitude: '<longitude>'
@@ -278,10 +277,10 @@ requesterViber.getUserInfo({
 // Custom request (Telegram) and console.log(<response>)
 requesterTelegram.fetchSender({
   param: {
-    <parameter_1>:<value_1>,
-    <parameter_2>:<value_2>,
+    <parameter_1>:'<value_1>',
+    <parameter_2>:'<value_2>',
     ...
-    <parameter_n>:<value_n>
+    <parameter_n>:'<value_n>'
   },
   page:         '<method>',
   responseType: 'custom'
@@ -291,10 +290,10 @@ requesterTelegram.fetchSender({
 // Custom request (VK) and console.log(<response>)
 requesterVK.fetchSender({
   param: {
-    <parameter_1>:<value_1>,
-    <parameter_2>:<value_2>,
+    <parameter_1>:'<value_1>',
+    <parameter_2>:'<value_2>',
     ...
-    <parameter_n>:<value_n>
+    <parameter_n>:'<value_n>'
   },
   page:         '<method>',
   responseType: 'custom'
@@ -304,10 +303,10 @@ requesterVK.fetchSender({
 // Custom request (Viber) and console.log(<response>)
 requesterViber.fetchSender({
   param: {
-    <parameter_1>:<value_1>,
-    <parameter_2>:<value_2>,
+    <parameter_1>:'<value_1>',
+    <parameter_2>:'<value_2>',
     ...
-    <parameter_n>:<value_n>
+    <parameter_n>:'<value_n>'
   },
   page:         '<method>',
   responseType: 'custom'
