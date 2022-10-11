@@ -52,11 +52,17 @@ let requesterViber = new botLite.RequestViber({
 ```typescript
 let keyboards = new botLite.Keyboard({
   keyboard: [[
-    'btn 1.1', 
-    'btn 1.2'
-  ], [
-    'btn 2.1', 
-    'btn 2.2'
+    '<button_1_1>', 
+    '<button_1_2>',
+    ...
+    '<button_1_n>'
+  ],
+    ...
+  [
+    '<button_n_1>', 
+    '<button_n_2>', 
+    ...
+    '<button_n_n>'
   ]]
 });
 ```
@@ -106,7 +112,7 @@ requesterViber.sendText({
 }).then((r:any) => console.log(r));
 ```
 #### Response
-```
+```yaml
 {
   ok: true,
   messenger: '<messenger>', // telegram or vk or viber
@@ -148,7 +154,7 @@ requesterViber.sendPhoto({
 }).then((r:any) => console.log(r));
 ```
 #### Response
-```
+```yaml
 {
   ok: true,
   messenger: '<messenger>', // telegram or vk or viber
@@ -187,7 +193,7 @@ requesterViber.sendFile({
 }).then((r:any) => console.log(r));
 ```
 #### Response
-```
+```yaml
 {
   ok: true,
   messenger: '<messenger>', // telegram or vk or viber
@@ -229,7 +235,7 @@ requesterViber.sendLocation({
 }).then((r:any) => console.log(r));
 ```
 #### Response
-```
+```yaml
 {
   ok: true,
   messenger: '<messenger>', // telegram or vk or viber
@@ -262,7 +268,7 @@ requesterViber.getUserInfo({
 }).then((r:any) => console.log(r));
 ```
 #### Response
-```
+```yaml
 {
   ok: true,
   messenger: '<messenger>', // telegram or vk or viber
@@ -323,12 +329,12 @@ requesterViber.fetchSender({
 }).then((r:any) => console.log(r));
 ```
 #### Response
-```
+```yaml
 {
   ok: true,
-  messenger: '<messenger>', // telegram or vk or viber
+  messenger: '<messenger>', # telegram or vk or viber
   mask: 'custom',
-  date: <date_and_time>, // Unix-time format
+  date: <date_and_time>, # Unix-time format
   statusText: {
     <response_to_request>
   }
