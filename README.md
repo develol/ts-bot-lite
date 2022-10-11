@@ -1,5 +1,8 @@
 # ts-bot-lite
-[TypeScript] NodeJS module of messenger bots ([Telegram](https://core.telegram.org/bots/api), [VK](https://dev.vk.com/api/bots/getting-started) and [Viber](https://developers.viber.com/docs/api/rest-bot-api/))
+[TypeScript] NodeJS module of messenger bots (Telegram, VK and Viber)
+
+***Node.js v18.2.0+***\
+***TypeScript v4.8.0+***
 
 - [Getting started](#sender-of-requests)
 - [Sender of requests](#sender-of-requests)
@@ -14,12 +17,8 @@
   - [Custom request (by official Bot API)](#custom-request-by-official-bot-api)
 - [Receiving messages](#receiving-messages)
 
-
 ## Getting started
-```
-npm i --save ts-bot-lite
-```
-or cloning this repository and...
+Cloning this repository and...
 ```
 npm i --save <path_to_repository>/ts-bot-lite
 ```
@@ -66,15 +65,17 @@ let keyboards = new botLite.Keyboard({
 // Formatting HTML text
 let textHTML = new botLite.Texter({
   markup: 'html',
-  text:   '<b>bold</b><br><i>italic</i><br><br><code>code</code><s>strike</s>'
+  text:   '<b>bold</b><br><i>italic</i><br><code>code</code><br><s>strike</s>'
 });
-
+```
+```typescript
 // Formatting Markdown text
 let textMarkdown = new botLite.Texter({
   markup: 'markdown',
   text:   '*bold*\r\n_italic_\r\n`code`\r\n```code```\r\n~strike~'
 });
-
+```
+```typescript
 // Custom text
 let textCustom = 'bold\r\nitalic\r\ncode\r\ncode\r\nstrike';
 ```
@@ -276,6 +277,11 @@ requesterViber.getUserInfo({
 }
 ```
 ### Custom request (by official Bot API)
+
+- [Telegram API](https://core.telegram.org/bots/api)
+- [VK API](https://dev.vk.com/api/bots/getting-started)
+- [Viber API](https://developers.viber.com/docs/api/rest-bot-api/)
+
 #### Code
 ```typescript
 // Custom request (Telegram) and console.log(<response>)
