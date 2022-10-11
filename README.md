@@ -1,7 +1,8 @@
 # ts-bot-lite
-[TypeScript] NodeJS module of messenger bots ([Telegram](https://core.telegram.org/bots/api), [VK](https://dev.vk.com/api/bots/getting-started) and [Viber](https://developers.viber.com/docs/api/rest-bot-api/))
+[TypeScript] NodeJS module of messenger bots (Telegram, VK and Viber)
 
-***Node.js v18.2.0+***
+***Node.js v18.2.0+***\
+***TypeScript v4.8.0+***
 
 - [Getting started](#sender-of-requests)
 - [Sender of requests](#sender-of-requests)
@@ -276,6 +277,11 @@ requesterViber.getUserInfo({
 }
 ```
 ### Custom request (by official Bot API)
+
+- [Telegram API](https://core.telegram.org/bots/api)
+- [VK API](https://dev.vk.com/api/bots/getting-started)
+- [Viber API](https://developers.viber.com/docs/api/rest-bot-api/)
+
 #### Code
 ```typescript
 // Custom request (Telegram) and console.log(<response>)
