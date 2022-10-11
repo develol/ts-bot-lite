@@ -5,16 +5,16 @@ export class Texter implements iApps {
     public text:   string = '';
     public markup: string = ''; // html | markdown | clear | none
 
-    /*  ┌-----------------------------------------------------------┬------------┐  *\
-        |                           HTML                            |  MARKDOWN  |
-        ├-----------------------------------------------------------┼------------┤
-        | <b>bold</b>, <strong>bold</strong>                        | *bold*     |
-        | <i>italic</i>, <em>italic</em>                            | _italic_   |
-        | <code>code</code>                                         | `code`     |
-        | <s>strike</s>, <strike>strike</strike>, <del>strike</del> | ~strike~   |
-        | <u>underline</u>                                          |            |
-        | <pre language="c++">code</pre>                            | ```code``` |
-    \*  └-----------------------------------------------------------┴------------┘  */
+    /*  ┌───────────────────────────────────────────────────────────┬────────────┐  *\
+        │                           HTML                            │  MARKDOWN  │
+        ├───────────────────────────────────────────────────────────┼────────────┤
+        │ <b>bold</b>, <strong>bold</strong>                        │ *bold*     │
+        │ <i>italic</i>, <em>italic</em>                            │ _italic_   │
+        │ <code>code</code>                                         │ `code`     │
+        │ <s>strike</s>, <strike>strike</strike>, <del>strike</del> │ ~strike~   │
+        │ <u>underline</u>                                          │            │
+        │ <pre language="c++">code</pre>                            │ ```code``` │
+    \*  └───────────────────────────────────────────────────────────┴────────────┘  */
 
     constructor(obj: {
         text:   string, 
