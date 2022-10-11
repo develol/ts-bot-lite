@@ -115,9 +115,9 @@ requesterViber.sendText({
 ```yaml
 {
   ok: true,
-  messenger: '<messenger>', // telegram or vk or viber
+  messenger: '<messenger>', # telegram or vk or viber
   mask: 'send',
-  date: <date_and_time>, // Unix-time format
+  date: <date_and_time>, # Unix-time format
   statusText: { 
     ok: true, 
     messageId: <message_id>
@@ -157,9 +157,9 @@ requesterViber.sendPhoto({
 ```yaml
 {
   ok: true,
-  messenger: '<messenger>', // telegram or vk or viber
+  messenger: '<messenger>', # telegram or vk or viber
   mask: 'send',
-  date: <date_and_time>, // Unix-time format
+  date: <date_and_time>, # Unix-time format
   statusText: { 
     ok:        true, 
     messageId: <message_id>
@@ -196,9 +196,9 @@ requesterViber.sendFile({
 ```yaml
 {
   ok: true,
-  messenger: '<messenger>', // telegram or vk or viber
+  messenger: '<messenger>', # telegram or vk or viber
   mask: 'send',
-  date: <date_and_time>, // Unix-time format
+  date: <date_and_time>, # Unix-time format
   statusText: { 
     ok: true, 
     messageId: <message_id>
@@ -238,9 +238,9 @@ requesterViber.sendLocation({
 ```yaml
 {
   ok: true,
-  messenger: '<messenger>', // telegram or vk or viber
+  messenger: '<messenger>', # telegram or vk or viber
   mask: 'send',
-  date: <date_and_time>, // Unix-time format
+  date: <date_and_time>, # Unix-time format
   statusText: { 
     ok: true, 
     messageId: <message_id>
@@ -271,9 +271,9 @@ requesterViber.getUserInfo({
 ```yaml
 {
   ok: true,
-  messenger: '<messenger>', // telegram or vk or viber
+  messenger: '<messenger>', # telegram or vk or viber
   mask: 'getUserInfo',
-  date: <date_and_time>, // Unix-time format
+  date: <date_and_time>, # Unix-time format
   statusText: {
     ok: true,
     userName: '<username>',
