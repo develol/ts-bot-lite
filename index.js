@@ -1,13 +1,13 @@
 "use strict";
 exports.__esModule = true;
 exports.RequestVK = exports.RequestViber = exports.RequestTelegram = exports.Texter = exports.Keyboard = void 0;
-var keyboard_1 = require("./keyboard");
+var keyboard_1 = require("./lib/keyboard");
 exports.Keyboard = keyboard_1.Keyboard;
-var texter_1 = require("./texter");
+var texter_1 = require("./lib/texter");
 exports.Texter = texter_1.Texter;
-var telegram_1 = require("./requesters/telegram");
+var telegram_1 = require("./lib/requesters/telegram");
 exports.RequestTelegram = telegram_1.RequestTelegram;
-var viber_1 = require("./requesters/viber");
+var viber_1 = require("./lib/requesters/viber");
 exports.RequestViber = viber_1.RequestViber;
-var vk_1 = require("./requesters/vk");
+var vk_1 = require("./lib/requesters/vk");
 exports.RequestVK = vk_1.RequestVK;
