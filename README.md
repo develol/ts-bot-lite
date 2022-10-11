@@ -1,6 +1,8 @@
 # ts-bot-lite
 [TypeScript] NodeJS module of messenger bots ([Telegram](https://core.telegram.org/bots/api), [VK](https://dev.vk.com/api/bots/getting-started) and [Viber](https://developers.viber.com/docs/api/rest-bot-api/))
 
+***Node.js v18.2.0+*** _(Fetch API is available on the global scope by default)_
+
 - [Getting started](#sender-of-requests)
 - [Sender of requests](#sender-of-requests)
   - [Initialization](#initialization)
