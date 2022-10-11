@@ -25,22 +25,26 @@ npm i --save <path_to_repository>/ts-bot-lite
 ```
 ## Sender of requests
 ### Initialization
+#### Import module
 ```typescript
 //Importing a module
 import * as botLite from 'ts-bot-lite';
 ```
+#### Object declaration
 ```typescript
-// Initialization of the class for working with the Telegram bot
+// Object declaration for Telegram
 let requesterTelegram = new botLite.RequestTelegram({
     token: '<api_key>'
 });
-
-// Initialization of the class for working with the VK bot
+```
+```typescript
+// Object declaration for VK
 let requesterVK = new botLite.RequestVK({
     token: '<api_key>'
 });
-
-// Initialization of the class for working with the Viber bot
+```
+```typescript
+// Object declaration for Viber
 let requesterViber = new botLite.RequestViber({
     token: '<api_key>'
 });
