@@ -68,13 +68,15 @@ let textHTML = new botLite.Texter({
   markup: 'html',
   text:   '<b>bold</b><br><i>italic</i><br><br><code>code</code><s>strike</s>'
 });
-
+```
+```typescript
 // Formatting Markdown text
 let textMarkdown = new botLite.Texter({
   markup: 'markdown',
   text:   '*bold*\r\n_italic_\r\n`code`\r\n```code```\r\n~strike~'
 });
-
+```
+```typescript
 // Custom text
 let textCustom = 'bold\r\nitalic\r\ncode\r\ncode\r\nstrike';
 ```
