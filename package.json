@@ -1,0 +1,12 @@
+{
+  "name": "ts-bot-lite",
+  "version": "1.0.0",
+  "description": "[TypeScript] NodeJS module of messenger bots (Telegram, Viber, VK)",
+  "main": "index.js",
+  "keywords": [],
+  "author": "[DeveLoL] Vsevolod Krekhalev",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc index.ts"
+  }
+}
