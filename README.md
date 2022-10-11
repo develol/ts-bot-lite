@@ -14,12 +14,8 @@
   - [Custom request (by official Bot API)](#custom-request-by-official-bot-api)
 - [Receiving messages](#receiving-messages)
 
-
 ## Getting started
-```
-npm i --save ts-bot-lite
-```
-or cloning this repository and...
+Cloning this repository and...
 ```
 npm i --save <path_to_repository>/ts-bot-lite
 ```
