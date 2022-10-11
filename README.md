@@ -66,7 +66,7 @@ let keyboards = new botLite.Keyboard({
 // Formatting HTML text
 let textHTML = new botLite.Texter({
   markup: 'html',
-  text:   '<b>bold</b><br><i>italic</i><br><br><code>code</code><s>strike</s>'
+  text:   '<b>bold</b><br><i>italic</i><br><code>code</code><br><s>strike</s>'
 });
 ```
 ```typescript
