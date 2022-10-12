@@ -1,5 +1,6 @@
 # ts-bot-lite
-[TypeScript] NodeJS module of messenger bots (Telegram, VK and Viber)
+[TypeScript] NodeJS module of messenger bots (Telegram, VK and Viber)\
+**[Example](https://github.com/develol/ts-bot-lite-example)**
 
 ***Node.js v18.2.0+***\
 ***TypeScript v4.8.0+***
