@@ -19,18 +19,17 @@
 - [Receiving messages](#receiving-messages)
 
 ## Getting started
-Cloning this repository and...
+1. Cloning this repository and...
 ```
 npm i --save <path_to_repository>/ts-bot-lite
 ```
-## Sender of requests
-### Initialization
-#### Import module
+2. Import module
 ```typescript
 //Importing a module
 import * as botLite from 'ts-bot-lite';
 ```
-#### Object declaration
+## Sender of requests
+### Initialization
 ```typescript
 // Object declaration for Telegram
 let requesterTelegram = new botLite.RequestTelegram({
