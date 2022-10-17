@@ -5,7 +5,7 @@
 ***Node.js v18.2.0+***\
 ***TypeScript v4.8.0+***
 
-- [Getting started](#sender-of-requests)
+- [Getting started](#getting-started)
 - [Sender of requests](#sender-of-requests)
   - [Initialization](#initialization)
   - [Create keyboard](#create-keyboard)
